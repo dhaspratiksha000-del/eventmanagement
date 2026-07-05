@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background-color:#49a5cc;
+        }
+
+        h1{
+            margin:0;
+            padding:20px;
+            text-align:center;
+            background-color:#54aede;
+            color:#f4f5f5;
+        }
+
+        .container{
+            background-color:#3a8aad;
+            text-align:center;
+            padding:15px;
+        }
+
+        .container a{
+            display:inline-block;
+            width:120px;
+            padding:12px;
+            margin:5px;
+            text-decoration:none;
+            color:rgb(18, 61, 71);
+            background-color:#5cb2da;
+            border:2px solid white;
+            border-radius:5px;
+        }
+
+        .container a:hover{
+            background-color:#2c7fb8;
+        }
+
+        .content{
+            padding:20px;
+        }
+
+        h2,h3{
+            color:black;
+        }
+
+        p{
+            font-size:18px;
+            line-height:1.6;
+        }
+
+        ul{
+            font-size:18px;
+        }
+
+        @media(max-width:700px){
+
+            h1{
+                font-size:24px;
+            }
+
+            .container a{
+                display:block;
+                width:80%;
+                margin:10px auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<h1 align="center">Event Registration Form</h1>
+
+<hr>
+
+<form action="success.html" method="get">
+
+Participant Name:<br>
+<input type="text" name="name"><br><br>
+
+Email Address:<br>
+<input type="email" name="email"><br><br>
+
+Mobile Number:<br>
+<input type="tel" name="mobile"><br><br>
+
+Gender:<br>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+<br><br>
+
+College Name:<br>
+<input type="text" name="college"><br><br>
+
+Select Event:<br>
+
+<select>
+<option>Coding Competition</option>
+<option>Web Development Workshop</option>
+<option>Quiz Competition</option>
+<option>Cultural Fest</option>
+</select>
+
+<br><br>
+
+Participation Mode:<br>
+
+<input type="radio" name="mode"> Online
+<input type="radio" name="mode"> Offline
+
+<br><br>
+
+Comments:<br>
+
+<textarea rows="5" cols="30"></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit Registration">
+
+<input type="reset" value="Reset Form">
+
+</form>
+
+</body>
+</html>
